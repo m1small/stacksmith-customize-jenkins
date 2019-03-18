@@ -42,7 +42,7 @@ files:
     - job-dsl.hpi
   userScripts:
     build: stacksmith/user-scripts/build.sh
-``
+```
 
 The `userUploads` specifies files to upload when building the image - in our case it is a Jenkins plugin file. The `build` element in `userScripts` specifies the path to script that should be run at build time.
 
