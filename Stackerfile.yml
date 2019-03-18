@@ -1,0 +1,16 @@
+# Custom Jenkins for Kubeapps
+appId: p/aws-demo-bitnami/apps/cf2e7010-23b4-0137-c291-3664dcd6e2cb
+
+appVersion: "2.2.1"
+files:
+  userUploads:
+    - job-dsl.hpi
+  userScripts:
+    build: stacksmith/user-scripts/build.sh
+baseImages:
+  docker:
+    name: 'bitnami/jenkins:2-ol-7'
+buildOptions:
+  assumeBaseImageFreshness: true
+platforms:
+  - target: docker
