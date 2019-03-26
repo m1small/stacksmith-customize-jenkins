@@ -26,6 +26,12 @@ installPlugin() {
   curl -O -sSL "${url}"
 }
 
+installStacksmithCLI() {
+  local version="${1:?Stacksmith CLI version required}"
+  curl -sSL -o /usr/local/bin/stacksmith "https://github.com/bitnami/stacksmith-cli/releases/download/${version}/stacksmith-linux-amd64"
+  chmod 0755 /usr/local/bin/stacksmith
+}
+
 # install Go
 installGolang
 
@@ -38,5 +44,8 @@ installUploadedPlugins
 
 # install a plugin via URL
 installPlugin https://updates.jenkins.io/download/plugins/golang/1.2/golang.hpi
+
+# install Stacksmith CLI
+installStacksmithCLI v0.10.0
 
 echo "Customizations applied"

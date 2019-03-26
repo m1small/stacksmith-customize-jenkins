@@ -1,7 +1,7 @@
 # Custom Jenkins for Kubeapps
 appId: p/aws-demo-bitnami/apps/cf2e7010-23b4-0137-c291-3664dcd6e2cb
 
-appVersion: "2.2.1"
+appVersion: "2.2.4"
 files:
   userUploads:
     - job-dsl.hpi
