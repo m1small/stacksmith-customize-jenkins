@@ -2,7 +2,8 @@
 
 set -eu -o pipefail
 
-if [ "${STACKSMITH_NEW_APP:-}" != "" ] ; then
+
+if [ "${STACKSMITH_NEW_APP:-}" != "" ] && [ "${STACKSMITH_NEW_APP}" != "false" ] ; then
   if [ "${STACKSMITH_NEW_APP_NAME:-}" = "" ] ; then
     echo >&2 "Application name must be specified"
     exit 1
