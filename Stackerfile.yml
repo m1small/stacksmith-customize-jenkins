@@ -1,7 +1,6 @@
-# Custom Jenkins for Kubeapps
-appId: p/aws-demo-bitnami/apps/cf2e7010-23b4-0137-c291-3664dcd6e2cb
-appName: "Custom Jenkins for Kubeapps"
-appVersion: "2.2.5"
+appId: https://stacksmith.bitnami.com/p/vmware-aws-sandbox/apps/6ddb7d87-ab7e-1dac-759c-0df269759edc
+appVersion: "2"
+appName: Custom Jenkins from Bitnami Catalog
 files:
   userUploads:
     - job-dsl.hpi
